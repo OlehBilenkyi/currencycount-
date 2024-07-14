@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер Валют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Конвертер Валют</h1>
+        <div class="input-group">
+            <input type="number" id="amount" placeholder="Введите сумму">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="UAH">UAH</option>
+            </select>
+            <img id="fromCurrencyImg" class="currency-flag" alt="USD Flag" src="dol.png">
+
+        </div>
+        <div class="input-group">
+            <select id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="UAH">UAH</option>
+            </select>
+            <img id="toCurrencyImg" class="currency-flag" alt="USD Flag" src="dol.png">
+   
+        </div>
+        <button id="convert">Конвертировать</button>
+        <div class="result">
+            <p>Результат: <span id="result">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
